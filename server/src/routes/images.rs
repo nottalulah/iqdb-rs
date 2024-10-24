@@ -13,7 +13,6 @@ use crate::{response::SignatureResponse, utils::get_signature, ApiError, ApiResp
 
 #[derive(Serialize)]
 pub struct PostImageResponse {
-    #[serde(rename = "post_id")]
     pub id: i64,
     pub hash: String,
     pub signature: SignatureResponse,
@@ -21,7 +20,6 @@ pub struct PostImageResponse {
 
 #[derive(Serialize)]
 pub struct DeleteImageResponse {
-    #[serde(rename = "post_id")]
     pub id: i64,
 }
 

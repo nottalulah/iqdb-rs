@@ -27,7 +27,6 @@ pub type GetQueryResponse = Vec<GetQueryResponseImage>;
 
 #[derive(Serialize)]
 pub struct GetQueryResponseImage {
-    #[serde(rename = "post_id")]
     pub id: i64,
     pub score: f32,
     pub hash: String,
